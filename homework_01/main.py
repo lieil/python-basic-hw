@@ -26,7 +26,7 @@ def is_prime(num: int) -> bool:
         return True
     if num % 2 == 0 or num < 2:
         return False
-    for divisor in range(3, int(sqrt(num)), 2):
+    for divisor in range(3, int(sqrt(num))+1):
         if num % divisor == 0:
             return False
     return True
